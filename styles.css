@@ -15,10 +15,19 @@
 }
 
 .menu {
-    border: 1px solid #fff;
     width: 900px;
 
     /* flexbox */
     display: flex;
     justify-content: space-between;
 }
+
+.links {
+     /* flexbox */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login {
+    margin-left: 20px;
+  }
