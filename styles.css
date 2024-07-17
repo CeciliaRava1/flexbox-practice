@@ -39,7 +39,7 @@
     /* flexbox */
     display: flex;
     justify-content: center;
-    
+
 }
 
 .header {
@@ -53,22 +53,35 @@
 }
 
 .photo-grid-container {
-     /* flexbox */
+    /* flexbox */
     display: flex;
     justify-content: center;
-  }
-  
-  .photo-grid {
+}
+
+.photo-grid {
     width: 900px;
 
-     /* flexbox */
+    /* flexbox */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  }
-  
-  .photo-grid-item {
+    flex-direction: row;
+    align-items: center;
+    flex-direction: row-reverse;
+    /* <--- Really freaking cool! */
+}
+
+
+.photo-grid-item {
     border: 1px solid #fff;
     width: 300px;
     height: 300px;
-  }
+}
+
+.first-item {
+    order: 1;
+}
+
+.last-item {
+    order: -1;
+}
